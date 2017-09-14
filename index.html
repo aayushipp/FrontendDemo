@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Select Tags</title>
+    <link rel="stylesheet" type="text/css" href="tags.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="tags.js" ></script>
+</head>
+<body>
+
+
+
+ <table width="100%">
+ <tr>
+ <td colspan="2" style="color:#4a4848;text-align:left">
+    We have identified you are staying with us at 205, Green Ark Towers, Baner, Pune.<br /><br />
+ </td>
+ </tr>
+ <tr>
+ <td width="85%">
+
+  <div id="tags">      
+      Enter Service Request...
+  </div>
+
+ </td>
+ <td align="right" valign="top">
+    <input type="submit" class="submit_btn" id="submit_final" value="Submit" onclick="javascript:showfinal();" style="background-color:lightgray;color:white" disabled />    
+ </td>
+ </tr>
+
+ <tr>
+ <td colspan="2" align="center">
+ <br />
+    <div id="div_srvc_request" style="text-align:left">
+    <b>Please select your type of service request :</b><br /><br />
+    <ul id="li_srvice_req" class="tags">
+      <li class="tag">Furniture Repair</li>
+      <li class="tag">Plumbing House</li>
+      <li class="tag">Electrical Issue</li>
+      <li class="tag">Internet Issue</li>
+      <li class="tag">DTH/Cable Issue</li>
+      <li class="tag">Cooking Gas Issue</li>
+      <li class="tag">Water Issue</li>
+      <li class="tag">House Keys</li>
+      <li class="tag">Electronic Aplliance Service</li>
+    </ul>
+    </div>
+
+
+    <div id="div_furni" style="display:none;text-align:left">
+    <b>Please select your type of issue :</b><br /><br />
+    <ul id="li_furni_req" class="tags">
+      <li class="tag">Issue with bed</li>
+      <li class="tag">Issue With Wardobe</li>
+      <li class="tag">Issue with Matress</li>
+      <li class="tag">Issue With Side Table</li>
+      <li class="tag">Issue with sofa set</li>
+      <li class="tag">Issue with Dining table</li>
+      <li class="tag">Issue with Kitchen Cabinets</li>
+    </ul>
+    </div>
+
+
+    <div id="div_plumb" style="display:none;text-align:left">
+    <b>Please select your type of service request :</b><br /><br />
+    <ul id="li_plumb" class="tags">
+      <li class="tag">No Water</li>
+      <li class="tag">Water Pressure Reduced</li>
+      <li class="tag">Tap Leakage</li>
+    </ul>
+    </div>
+
+    
+    <div id="div_electric" style="display:none;text-align:left">
+    <b>Please select your type of service request :</b><br /><br />
+    <ul id="li_electric" class="tags">
+      <li class="tag">No Electricity</li>
+      <li class="tag">Short Circuit</li>
+      <li class="tag">Button/Switch Issue</li>
+      <li class="tag">Electric Shock</li>
+    </ul>
+    </div>
+
+    <div id="div_internet" style="display:none;text-align:left">
+    <b>Please select your type of service request :</b><br /><br />
+    <ul id="li_internet" class="tags">
+      <li class="tag">No Internet</li>
+      <li class="tag">Slow Speed</li>
+      <li class="tag">Site Blocked</li>      
+    </ul>
+    </div>
+
+    <div id="div_dth" style="display:none;text-align:left">
+    <b>Please select your type of service request :</b><br /><br />
+    <ul id="li_dth" class="tags">
+      <li class="tag">No Signal</li>
+      <li class="tag">Channel Missing</li>
+      <li class="tag">Bad Reception Quality</li>
+      <li class="tag">Request for Resetup</li>
+    </ul>
+    </div>
+
+
+    <div id="div_gas" style="display:none;text-align:left">
+    <b>Please select your type of service request :</b><br /><br />
+    <ul id="li_gas" class="tags">
+      <li class="tag">No Gas</li>
+      <li class="tag">Faulty Meter</li>
+      <li class="tag">Gas Leakage</li>
+      <li class="tag">Gas Stove Problem</li>
+    </ul>
+    </div>
+
+    <div id="div_water" style="display:none;text-align:left">
+    <b>Please select your type of service request :</b><br /><br />
+    <ul id="li_water" class="tags">
+      <li class="tag">No Water</li>
+      <li class="tag">Quality of Water</li>
+      <li class="tag">Water Shortage</li>      
+    </ul>
+    </div>
+
+
+    <div id="div_house" style="display:none;text-align:left">
+    <b>Please select your type of service request :</b><br /><br />
+    <ul id="li_house" class="tags">
+      <li class="tag">Lost My Keys</li>
+      <li class="tag">Create Duplicate Key</li>
+      <li class="tag">Lock is Not Opening</li>      
+      <li class="tag">Lock was broken</li>      
+    </ul>
+    </div>
+
+
+    <div id="div_app" style="display:none;text-align:left">
+    <b>Please select your type of service request :</b><br /><br />
+    <ul id="li_app" class="tags">
+      <li class="tag">Appliance Not Wroking</li>
+      <li class="tag">Buy New Appliance</li>
+      <li class="tag">New Appliance Demo</li>
+      <li class="tag">Exchange Appliance</li>      
+    </ul>
+    </div>
+
+    
+    <div id="div_prior" style="display:none;text-align:left">
+    <b>Please select your type of priority :</b><br /><br />
+    <ul id="li_prior" class="tags">
+      <li class="tag">High Priority</li>
+      <li class="tag">Fix it ASAP</li>
+      <li class="tag">Not Bothering</li>
+    </ul>
+    </div>
+
+
+    
+    <div id="div_comment" style="display:none;width:350px;">
+
+      <input type="text" id="txt_comment" maxlength="250" value="" placeholder="Enter your comment" class="text_comment" /><br />
+      <input type="button" class="submit_btn" value="Enter Comment" onclick="submitcomment();" style="background-color:darkorange;margin-top:10px;color:white" />    
+
+    </div>
+
+
+ </td>
+ </tr>
+ </table>
+   
+
+
+</body>
+</html>
